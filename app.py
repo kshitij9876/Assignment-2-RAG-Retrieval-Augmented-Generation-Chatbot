@@ -79,7 +79,7 @@ def generate_answer(query, retrieved_chunks):
 app = Flask(__name__)
 
 # MySQL setup
-conn = mysql.connector.connect(host="localhost", user="root", password="ayushk192", database="chatbot")
+conn = mysql.connector.connect(host="localhost", user="root", password="****", database="chatbot")
 cursor = conn.cursor()
 
 # Create table for chat history (if it doesn't exist)
