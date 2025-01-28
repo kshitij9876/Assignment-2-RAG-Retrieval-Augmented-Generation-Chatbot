@@ -55,7 +55,7 @@ embeddings = model.encode(chunks)
 
 # Set up FAISS index
 d = embeddings.shape[1]  # Dimensionality of the embeddings
-index = faiss.IndexFlatL2(d)  # FAISS index for L2 distance
+index = faiss.IndexFlatL2(d)  
 index.add(np.array(embeddings, dtype=np.float32))
 
 def retrieve_relevant_chunks(query, k=2):
